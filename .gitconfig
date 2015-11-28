@@ -9,6 +9,7 @@
 	fileMode = false
 	logallrefupdates = true
 	ignorecase = true
+	editor = vi
 [color]
 	ui = true
 [help]

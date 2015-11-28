@@ -2,7 +2,7 @@
 
 #-- fancy prompt
 #----------------------------------------------------------------------#
-PROMPT='[Laptop] %# %~/: '
+PROMPT='[%HOST%] %# %~/: '
 
 #-- fancy RIGHT prompt -- '%?[%D{%d %b %Y %l:%M%p}]'
 #----------------------------------------------------------------------#
@@ -66,6 +66,7 @@ zstyle ':completion:*' list-colors ''
 #-- these are important
 #----------------------------------------------------------------------#
 export EDITOR=ed
+export VISUAL=vi
 export PAGER=less
 
 #-- HOME LOCAL
@@ -97,3 +98,9 @@ alias gitbd='git log --format="%h (%an) --  %s " '
 export IRCNAME=henderjon
 export IRCNICK=henderjon
 export IRCUSER=henderjon
+
+#-- Optional settings not commited to the repo
+#----------------------------------------------------------------------#
+if [ -f .env_zshrc ]; then
+	source .env_zshrc
+fi
