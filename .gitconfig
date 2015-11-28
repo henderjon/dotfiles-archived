@@ -1,0 +1,50 @@
+[user]
+	net = Jon Henderson
+	email = list@box370.net
+	name = henderjon
+[core]
+	quotepath = false
+	autocrlf = input
+	excludesfile = /Users/henderjon/.gitignore_global
+	fileMode = false
+	logallrefupdates = true
+	ignorecase = true
+[color]
+	ui = true
+[help]
+	autocorrect = true
+[push]
+	default = upstream
+[pull]
+	default = upstream
+
+################################################################################
+### merge is called by git with 7 parameters:
+### $path $old-file $old-hex $old-mode $new-file $new-hex $new-mode
+################################################################################
+[merge]
+	tool = bc3
+
+[mergetool]
+	keepBackup = true
+
+[mergetool "vimerge"]
+	cmd = vim -f -d $LOCAL $MERGED $REMOTE
+	trustExitCode = false
+	keepBackup = false
+
+################################################################################
+### diff is called with $BASE, $LOCAL, $REMOTE, $MERGED
+################################################################################
+[diff]
+	tool = diff
+
+[difftool]
+	prompt = true
+
+[difftool "diff"]
+	cmd = diff -U 0 $LOCAL $REMOTE
+	trustExitCode = false
+
+
+
