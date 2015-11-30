@@ -2,7 +2,7 @@
 
 #-- fancy prompt
 #----------------------------------------------------------------------#
-PROMPT='[,HOST,] %# %~/: '
+PROMPT='[.HOST] %# %~/: '
 
 #-- fancy RIGHT prompt -- '%?[%D{%d %b %Y %l:%M%p}]'
 #----------------------------------------------------------------------#
@@ -101,6 +101,6 @@ export IRCUSER=henderjon
 
 #-- Optional settings not commited to the repo
 #----------------------------------------------------------------------#
-if [ -f .env_zshrc ]; then
-	source .env_zshrc
+if [ -f $HOME/.env_zshrc ]; then
+	source $HOME/.env_zshrc
 fi

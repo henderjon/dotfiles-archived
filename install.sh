@@ -18,4 +18,4 @@ do
 	ln -s $HERE/$f $HOME/$f
 done
 
-printf ",s/,HOST,/$1/\nw\nq\n" | ed .zshrc
+printf ",s/.HOST/$1/\nw\nq\n" | ed .zshrc
