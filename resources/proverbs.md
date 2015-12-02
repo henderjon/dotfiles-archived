@@ -46,4 +46,12 @@ Pike Proverbs
   - Documentation is for users.
   - Don't panic.
 
+My Proverbs
 
+  - Solve one problem at a time
+  - Simplicity is both a goal and a method
+  - The less you do, the more of it you can do (Hanselman)
+  - Patterns are not rules
+  - Code for the problem; A tool that does everything does nothing well
+  - Code vertically
+  - There is seldom one correct answer
