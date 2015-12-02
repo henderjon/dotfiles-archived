@@ -41,7 +41,7 @@
 	tool = diff
 
 [difftool]
-	prompt = true
+	prompt = false
 
 [difftool "diff"]
 	cmd = diff -U 0 $LOCAL $REMOTE

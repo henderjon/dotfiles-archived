@@ -1,28 +1,13 @@
 Worse is better
 
-  - ... simplicity of both the interface and the implementation are more important than any other attributes of the system—including correctness, consistency, and completeness. There is a point where less functionality ("worse") is a preferable option ("better") in terms of practicality and usability. Software that is limited, but simple to use, may be more appealing to the user and market than the reverse.
+... simplicity of both the interface and the implementation are more important than any other attributes of the system—including correctness, consistency, and completeness. There is a point where less functionality ("worse") is a preferable option ("better") in terms of practicality and usability. Software that is limited, but simple to use, may be more appealing to the user and market than the reverse.
 
-This is the Unix philosophy:
+Unix Philosophy:
 
   - Write programs that do one thing and do it well.
   - Write programs to work together.
-  - Write programs to handle text streams, because that is a universal interface.
-
-This is the Python philosophy
-
-  - Beautiful is better than ugly.
-  - Explicit is better than implicit.
-  - Simple is better than complex.
-  - Complex is better than complicated.
-  - Flat is better than nested.
-  - Sparse is better than dense.
-  - Readability counts.
-  - Special cases aren't special enough to break the rules, although practicality beats purity.
-  - Errors should never pass silently, unless explicitly silenced.
-  - In the face of ambiguity, refuse the temptation to guess.
-  - Now is better than never, although never is often better than *right* now.
-  - If the implementation is hard to explain, it's a bad idea.
-  - If the implementation is easy to explain, it may be a good idea.
+  - Write programs to handle text streams, because that is a universal
+  interface.
 
 Pike Proverbs
 
@@ -45,13 +30,30 @@ Pike Proverbs
   - Design the architecture, name the components, document the details.
   - Documentation is for users.
   - Don't panic.
+  - Readable means Reliable.
+  - Clarity is worth the fight.
+
+Misc
+
+  - The less you do, the more of it you can do (S Hanselman)
+  - Make it run, then make it right, then make it fast (K Beck)
+  - It's not a problem until it's a problem (J Donat)
+  - If the implementation is hard to explain, it's a bad idea (Python)
+
+Kernighan
+
+  - The most effective debugging tool is still careful thought, coupled with
+    judiciously placed print statements.
+  - Controlling complexity is the essence of computer programming.
 
 My Proverbs
 
   - Solve one problem at a time
   - Simplicity is both a goal and a method
-  - The less you do, the more of it you can do (Hanselman)
   - Patterns are not rules
   - Code for the problem; A tool that does everything does nothing well
   - Code vertically
-  - There is seldom one correct answer
+  - There is seldom only one correct answer
+  - A solution without a problem is a problem
+  - Knowing what and when to delete is as important as knowing what and when to
+    add
