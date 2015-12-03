@@ -91,7 +91,6 @@ alias h='history -25'
 alias hall='history 1'
 alias grep='grep --color -n '
 alias gome='cd $GOPATH/src/github.com/henderjon'
-alias gitbd='git log --format="%h (%an) --  %s " '
 
 #-- IRC
 #----------------------------------------------------------------------#
@@ -104,3 +103,9 @@ export IRCUSER=henderjon
 if [ -f $HOME/.env_zshrc ]; then
 	source $HOME/.env_zshrc
 fi
+
+
+#-- DEPRECATED
+#----------------------------------------------------------------------#
+#alias gitbd='git log --format="%cD %>(16)%an | %><(7)%h | %s " '
+

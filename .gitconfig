@@ -19,10 +19,8 @@
 [pull]
 	default = upstream
 
-################################################################################
 ### merge is called by git with 7 parameters:
 ### $path $old-file $old-hex $old-mode $new-file $new-hex $new-mode
-################################################################################
 [merge]
 	tool = bc3
 
@@ -34,9 +32,7 @@
 	trustExitCode = false
 	keepBackup = false
 
-################################################################################
 ### diff is called with $BASE, $LOCAL, $REMOTE, $MERGED
-################################################################################
 [diff]
 	tool = diff
 
@@ -47,5 +43,5 @@
 	cmd = diff -U 0 $LOCAL $REMOTE
 	trustExitCode = false
 
-
-
+[alias]
+	branch-diff = log --format='%cD %>(16)%an | %><(7)%h | %s '
