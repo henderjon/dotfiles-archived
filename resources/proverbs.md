@@ -6,8 +6,7 @@ Unix Philosophy:
 
   - Write programs that do one thing and do it well.
   - Write programs to work together.
-  - Write programs to handle text streams, because that is a universal
-  interface.
+  - Write programs to handle text streams, because that is a universal interface.
 
 Pike Proverbs
 
@@ -55,5 +54,4 @@ My Proverbs
   - Code vertically
   - There is seldom only one correct answer
   - A solution without a problem is a problem
-  - Knowing what and when to delete is as important as knowing what and when to
-    add
+  - Knowing what and when to delete is as important as knowing what and when to add

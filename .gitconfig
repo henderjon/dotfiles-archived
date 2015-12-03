@@ -1,7 +1,9 @@
+#-- diff/merge args: $BASE $LOCAL $REMOTE $MERGED
+#-- diff-wrapper params: $PATH $OLD-FILE $OLD-HEX $OLD-MODE $NEW-FILE $NEW-HEX $NEW-MODE
+#----------------------------------------------------------------------#
 [user]
-	net = Jon Henderson
 	email = list@box370.net
-	name = henderjon
+	name = Jon Henderson
 [core]
 	quotepath = false
 	autocrlf = input
@@ -18,32 +20,32 @@
 	default = upstream
 [pull]
 	default = upstream
-
-#-- merge is called by git with 7 parameters:
-#-- $path $old-file $old-hex $old-mode $new-file $new-hex $new-mode
-#----------------------------------------------------------------------#
+	ff = true
 [merge]
 	tool = bc3
-
+	ff = false
+	defaultToUpstream = true
 [mergetool]
 	keepBackup = true
-
 [mergetool "vimerge"]
 	cmd = vim -f -d $LOCAL $MERGED $REMOTE
 	trustExitCode = false
 	keepBackup = false
-
-#-- diff is called with $BASE, $LOCAL, $REMOTE, $MERGED
-#----------------------------------------------------------------------#
+[pretty]
+	columns = %<(32)%cD %>(16)%an | %><(7)%h | %s
 [diff]
 	tool = diff
-
 [difftool]
 	prompt = false
-
 [difftool "diff"]
 	cmd = diff -U 0 $LOCAL $REMOTE
 	trustExitCode = false
-
 [alias]
-	branch-diff = log --format='%cD %>(16)%an | %><(7)%h | %s '
+	cl  = log --pretty=columns
+	rcl = reflog --pretty=columns
+	vv  = branch -vv
+[fetch]
+	prune = true
+
+
+
