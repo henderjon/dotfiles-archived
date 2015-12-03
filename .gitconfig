@@ -1,5 +1,5 @@
 #-- diff/merge args: $BASE $LOCAL $REMOTE $MERGED
-#-- diff-wrapper params: $PATH $OLD-FILE $OLD-HEX $OLD-MODE $NEW-FILE $NEW-HEX $NEW-MODE
+#-- extrenal diff-wrapper params: $PATH $OLD-FILE $OLD-HEX $OLD-MODE $NEW-FILE $NEW-HEX $NEW-MODE
 #----------------------------------------------------------------------#
 [user]
 	email = list@box370.net

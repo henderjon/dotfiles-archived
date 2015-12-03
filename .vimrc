@@ -42,10 +42,10 @@
 	endif
 
 	syntax on
-	colorscheme molokai
+	"colorscheme molokai
 	"let g:molokai_original = 1
 
-	"colorscheme Monokaish
+	colorscheme monokaish
 	"set background=dark
 
 
