@@ -19,8 +19,9 @@
 [pull]
 	default = upstream
 
-### merge is called by git with 7 parameters:
-### $path $old-file $old-hex $old-mode $new-file $new-hex $new-mode
+#-- merge is called by git with 7 parameters:
+#-- $path $old-file $old-hex $old-mode $new-file $new-hex $new-mode
+#----------------------------------------------------------------------#
 [merge]
 	tool = bc3
 
@@ -32,7 +33,8 @@
 	trustExitCode = false
 	keepBackup = false
 
-### diff is called with $BASE, $LOCAL, $REMOTE, $MERGED
+#-- diff is called with $BASE, $LOCAL, $REMOTE, $MERGED
+#----------------------------------------------------------------------#
 [diff]
 	tool = diff
 
