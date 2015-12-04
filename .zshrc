@@ -63,6 +63,10 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'm:{A-Z}={a-z}'
 #----------------------------------------------------------------------#
 zstyle ':completion:*' list-colors ''
 
+#-- visible tab highlight through completion list
+#----------------------------------------------------------------------#
+zstyle ':completion:*' menu select
+
 #-- these are important
 #----------------------------------------------------------------------#
 export EDITOR=ed
