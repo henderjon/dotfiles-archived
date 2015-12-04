@@ -5,3 +5,7 @@
   - INI
   - Awk
   - SASS
+  - PhpDoc
+  - HTMLBeautify
+  - DocBlockr
+  - ColorSchemeEditor

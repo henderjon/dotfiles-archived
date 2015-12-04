@@ -5,3 +5,7 @@
   - https://github.com/mozilla/Fira
   - https://github.com/fatih/dotfiles
   - https://github.com/vim/vim.git
+  - https://github.com/scrooloose/nerdtree
+  - https://github.com/vim-scripts/Vimball
+    - [rel](http://www.vim.org/scripts/script.php?script_id=1502)
+  - http://www.drchip.org/astronaut/vim/

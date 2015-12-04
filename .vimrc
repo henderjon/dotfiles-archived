@@ -19,7 +19,6 @@
 	set diffopt=filler,iwhite
 	set fileformats=unix,dos
 "Margins
-	"set expandtab "convert tabs to spaces
 	set tabstop=4 "tab width
 	set shiftwidth=4 "shift width
 	set tabpagemax=15 "allow 15 tabs
@@ -35,16 +34,12 @@
 	set backspace=indent,eol,start "{:help bs} a fix for *POSSIBLY*  broken backspace keys
 	set matchpairs+=<:> "add html tag delimeters to bracket matching
 	set whichwrap=<,>,[,],h,l " Allows for left/right keys to wrap across lines
-	set rtp+=$GOROOT/misc/vim
 	filetype plugin on " allows for some extra filetype specific goodness, specifically auto comments
 	if !&diff
 		set colorcolumn=80,72
 	endif
 
 	syntax on
-	"colorscheme molokai
-	"let g:molokai_original = 1
-
 	colorscheme monokaish
 	"set background=dark
 

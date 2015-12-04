@@ -84,7 +84,7 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 
 #-- Alias
 #----------------------------------------------------------------------#
-alias lsl='ls -AFGhlT'
+alias lsl='ls -AFGThl' # -AFChl --time-style=+'%b %e %T %Y'
 alias ed='ed -p :'
 alias h='history -25'
 alias hall='history 1'
@@ -102,9 +102,3 @@ export IRCUSER=henderjon
 if [ -f $HOME/.env_zshrc ]; then
 	source $HOME/.env_zshrc
 fi
-
-
-#-- DEPRECATED
-#----------------------------------------------------------------------#
-#alias gitbd='git log --format="%cD %>(16)%an | %><(7)%h | %s " '
-

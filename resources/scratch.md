@@ -14,17 +14,10 @@ To patch via patch
   - `$ git diff --no-ext-diff OLD..NEW > patch.diff`
   - `$ patch –p1 --dry-run --verbose < patch.diff`
 
-To display a nice list of commits that are in branch2 but NOT in branch1:
-
-  - `$ git log --format="%h (%an) --  %s " BRANCH1..BRANCH2`
-
-To create a git tag
+To create/remove a git tag
 
   - `$ git tag -a -m "message" TAGNAME TARGETCOMMIT`
   - `$ git push REMOTE --tags`
-
-To remove a remote tag:
-
   - `$ git tag -d TAGNAME`
   - `$ git push REMOTE :refs/tags/TAGNAME`
 
@@ -90,7 +83,8 @@ Other stuff: cuetools, shntool ... (cuebreakpoints) used to split stuff
 ### rsync
 
   - `$ rsync -avh --progress --exclude=.DS_Store SRC DEST`
-  - `$ rsync -avh --dry-run --progress --exclude '.DS_*' SRC DEST`
+    - `--dry-run`
+    - `--progress`Ω
 
 ### whats my ip
 
@@ -154,10 +148,10 @@ To export to a CSV:
   - `$ wget --recursive --no-clobber --page-requisites --adjust-extension (--html-extension) --convert-links --domains site.com www.site.com`
   - `$ wget -r -nc -p -E -k -D site.com www.site.com`
   - `$ wget -rpEk -nc -D site.com www.site.com`
-  - --span-hosts
-  - --user-agent
-  - --limit-rate (=20k)
-  - --wait (=3)
+  - `--span-hosts`
+  - `--user-agent`
+  - `--limit-rate` (=20k)
+  - `--wait` (=3)
 
 ### Sublime Text 2
 

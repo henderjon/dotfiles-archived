@@ -32,7 +32,8 @@
 	trustExitCode = false
 	keepBackup = false
 [pretty]
-	columns = %<(32)%cD %>(16)%an | %><(7)%h | %s
+	columns = %<(32)%cd %>(16)%an | %><(7)%h | %s
+	quick   = %h | %<(15)%an %<(15)%cd %s
 [diff]
 	tool = diff
 [difftool]
@@ -46,6 +47,5 @@
 	vv  = branch -vv
 [fetch]
 	prune = true
-
-
-
+[log]
+	date = rfc
