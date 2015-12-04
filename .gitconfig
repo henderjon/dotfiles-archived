@@ -41,8 +41,8 @@
 	cmd = diff -U 0 $LOCAL $REMOTE
 	trustExitCode = false
 [alias]
-	cl  = log --pretty=columns
-	rcl = reflog --pretty=columns
+	cl  = log --pretty=columns -20
+	rcl = reflog --pretty=columns -20
 	vv  = branch -vv
 [fetch]
 	prune = true
