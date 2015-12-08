@@ -207,3 +207,7 @@ To turn off root login, edit: /etc/ssh/sshd_config:
 PermitRootLogin no
 ```
 
+## gifs
+
+  - transparent `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">`
+  - black `<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=">`
