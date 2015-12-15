@@ -54,3 +54,4 @@ My Proverbs
   - There is seldom only one correct answer
   - A solution without a problem is a problem
   - Knowing what and when to delete is as important as knowing what and when to add
+  - Don't be hasty

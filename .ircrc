@@ -10,6 +10,7 @@ set INPUT_ALIASES off
 set AUTO_WHOWAS on
 set SHOW_CHANNEL_NAMES on
 set SHOW_AWAY_ONCE on
+set BEEP_ON_MSG MSG
 
 # Speeds up ircII display 2 times
 set SCROLL_LINES 2
@@ -93,3 +94,4 @@ alias NoteServ msg NoteServ@Service.de
 
 # /help/on/on
 # /help/alias/alias
+# ingore / highlight_char
