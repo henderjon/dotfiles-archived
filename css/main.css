@@ -1,0 +1,13 @@
+
+body {
+	font-size: 14px;
+	font-family: 'Source Serif Pro', serif, 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+main, aside, footer{
+	max-width: 450px;
+}
