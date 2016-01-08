@@ -86,6 +86,11 @@ Other stuff: cuetools, shntool ... (cuebreakpoints) used to split stuff
     - `--dry-run`
     - `--progress`Ω
 
+### breaking large files
+
+  - tar czvf - input.file | split -b 256m - output.file.prefix.
+  - cat *.tgz.* | tar xvf -
+
 ### whats my ip
 
   - `$ dig TXT +short o-o.myaddr.l.google.com @ns1.google.com`

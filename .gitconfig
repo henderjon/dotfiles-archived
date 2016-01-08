@@ -44,6 +44,7 @@
 	cl  = log --pretty=columns -20
 	rcl = reflog --pretty=columns -20
 	vv  = branch -vv
+	co  = checkout
 [fetch]
 	prune = true
 [log]

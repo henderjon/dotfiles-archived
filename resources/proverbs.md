@@ -38,6 +38,7 @@ Misc
   - Make it run, then make it right, then make it fast (K Beck)
   - It's not a problem until it's a problem (J Donat)
   - If the implementation is hard to explain, it's a bad idea (Python)
+  - Winners focus on winning, losers focus on winners
 
 Kernighan
 
@@ -55,3 +56,11 @@ My Proverbs
   - A solution without a problem is a problem
   - Knowing what and when to delete is as important as knowing what and when to add
   - Don't be hasty
+
+Resolutions
+
+  - Honesty
+  - Gratitude
+  - Generosity
+  - Kindness
+

@@ -11,6 +11,7 @@ set AUTO_WHOWAS on
 set SHOW_CHANNEL_NAMES on
 set SHOW_AWAY_ONCE on
 set BEEP_ON_MSG MSG
+# set HOLD_MODE ON
 
 # Speeds up ircII display 2 times
 set SCROLL_LINES 2
