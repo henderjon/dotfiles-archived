@@ -45,6 +45,7 @@
 	rcl = reflog --pretty=columns -20
 	vv  = branch -vv
 	co  = checkout
+	s   = status
 [fetch]
 	prune = true
 [log]
