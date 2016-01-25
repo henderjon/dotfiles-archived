@@ -76,6 +76,7 @@ export PAGER=less
 #-- HOME LOCAL
 #----------------------------------------------------------------------#
 export HOMELOCAL=$HOME/local
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$HOMELOCAL/bin:$HOMELOCAL/sbin:$PATH
 export GOPATH=$HOME/Sites/go  # points to workspace
 export GOROOT=/usr/local/go   # ONLY use for custom install location
