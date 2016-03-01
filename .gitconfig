@@ -38,7 +38,7 @@
 [difftool]
 	prompt = false
 [difftool "diff"]
-	cmd = diff -U 0 $LOCAL $REMOTE
+#	cmd = diff -U 0 $LOCAL $REMOTE
 	trustExitCode = false
 [alias]
 	cl  = log --pretty=columns -20

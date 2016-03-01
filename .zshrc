@@ -91,11 +91,12 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 
 #-- Alias [`man zshbuiltins`]
 #----------------------------------------------------------------------#
-alias lsl='ls -AFGThl' # -AFChl --time-style=+'%b %e %T %Y'
+alias lsl='ls -AFGThl'  # --time-style=+'%b %e %T %Y' ## MacOS
+# alias lsl='ls -AFChl' # --time-style=+'%b %e %T %Y' ## CentOS
 alias ed='ed -p :'
 alias h='history -25'
 alias hall='history 1'
-alias grep='grep --color -n '
+alias grep='grep --color '
 alias gome='cd $GOPATH/src/github.com/henderjon'
 
 #-- IRC
