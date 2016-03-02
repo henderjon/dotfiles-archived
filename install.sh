@@ -11,11 +11,22 @@ HERE=`pwd`
 
 for f in ${FILES[@]}
 do
-	printf "mv %s/%s %s/%s.bkup\n" $HOME $f $HOME $f
-	mv $HOME/$f $HOME/$f.bkup
+	# rm links
+	if [ -h $HOME/$f ]; then
+		printf "rm %s/%s %s/%s.bkup\n" $HOME $f
+		rm $HOME/$f
+	fi
 
+	# create backups or *real* files
+	if [ -f $HOME/$f ]; then
+		printf "mv %s/%s %s/%s.bkup\n" $HOME $f $HOME $f
+		mv $HOME/$f $HOME/$f.bkup
+	fi
+
+	# create links to new files
 	printf "ln -s %s/%s %s/%s\n" $HERE $f $HOME $f
 	ln -s $HERE/$f $HOME/$f
+
 done
 
 printf ",s/Laptop/$1/\nw\nq\n" | ed .zshrc
