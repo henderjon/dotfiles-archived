@@ -93,6 +93,7 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 #----------------------------------------------------------------------#
 alias lsl='ls -AFGThl'  # --time-style=+'%b %e %T %Y' ## MacOS
 # alias lsl='ls -AFChl' # --time-style=+'%b %e %T %Y' ## CentOS
+alias less='less -S '
 alias ed='ed -p :'
 alias h='history -25'
 alias hall='history 1'
