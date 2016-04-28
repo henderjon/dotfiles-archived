@@ -198,7 +198,7 @@ intervals are expressed as */X where x is a number
 
 ## ssh
 
-  - `$ ssh-keygen -t rsa -C “email@address.com”`
+  - `$ ssh-keygen -t rsa -C "email@address.com"`
   - `$ service sshd restart`
   - `$ cat .id_rsa.pub >> .ssh/authorized_keys`
   - `$ chmod og-rw authorized_keys` ... `chmod 600 authorized_keys`
