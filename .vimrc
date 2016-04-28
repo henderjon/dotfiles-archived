@@ -1,4 +1,4 @@
-"Interface
+" Interface
 	set title                                                " allow vim to alter the title bar of the terminal
 	set titlestring=%<%F\ %M%R\ %n                           " the format of the terminal title
 	set nowrap                                               " turn off word wrap
@@ -18,15 +18,15 @@
 	" set lines=30 columns=100
 	set diffopt=filler,iwhite
 	set fileformats=unix,dos
-"Margins
+" Margins
 	set tabstop=4                                            " tab width
 	set shiftwidth=4                                         " shift width
 	set tabpagemax=15                                        " allow 15 tabs
 
-"Search
+" Search
 	set hlsearch "highlight search results
 
-"Editor Preferences
+" Editor Preferences
 	set showmatch                                            " show the matching bracket
 	set autoindent                                           " auto indent based on previous line
 	" set autochdir                                          " automatically change the working dir to the dir of the current file/buffer/window
