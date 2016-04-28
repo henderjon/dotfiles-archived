@@ -80,8 +80,8 @@ export GO15VENDOREXPERIMENT=1
 
 export PATH=$HOMELOCAL/bin:$HOMELOCAL/sbin:$PATH
 # export PATH=/usr/local/bin:/usr/local/sbin:$PATH
-export GOPATH=$HOME/code/go  # points to workspace
-export GOROOT=/usr/local/go   # ONLY use for custom install location
+export GOPATH=$HOME/code/go               # points to workspace
+export GOROOT=/usr/local/go               # ONLY use for custom install location
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 
 #-- subl

@@ -1,6 +1,3 @@
-#-- diff/merge args: $BASE $LOCAL $REMOTE $MERGED
-#-- extrenal diff-wrapper params: $PATH $OLD-FILE $OLD-HEX $OLD-MODE $NEW-FILE $NEW-HEX $NEW-MODE
-#----------------------------------------------------------------------#
 [user]
 	email = list@box370.net
 	name = henderjon
@@ -50,3 +47,8 @@
 	prune = true
 [log]
 	date = rfc
+
+
+#-- diff/merge args: $BASE $LOCAL $REMOTE $MERGED
+#-- extrenal diff-wrapper params: $PATH $OLD-FILE $OLD-HEX $OLD-MODE $NEW-FILE $NEW-HEX $NEW-MODE
+#----------------------------------------------------------------------#

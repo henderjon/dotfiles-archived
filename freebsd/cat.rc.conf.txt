@@ -7,3 +7,7 @@ firewall_myservices="22 80"
 firewall_allowservices="any"
 firewall_logdeny="YES"
 
+# ntpd -- Network Time Protocol
+ntpd_enable="YES"
+ntpd_sync_on_start="YES"
+

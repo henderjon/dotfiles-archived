@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 GOLANGV=https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
-DOTFILES=git@github.com:henderjon/dotfiles.git
+DOTFILES=https://github.com/henderjon/dotfiles.git
 
-yum install vim git ed zsh tmux iptables sudo
+yum install vim git ed zsh tmux iptables sudo ntp ntpdate ntp-doc
 
 cd
 # set up working dir
@@ -20,7 +20,6 @@ cd
 # install dotfiles
 git clone $DOTFILES
 cd dotfiles
-sh ./install.sh $1
 
 cd
 # generate an ssh key
@@ -30,3 +29,10 @@ cd
 # install the firewall
 iptables-restore < ~/dotfiles/centos/iptables.restore
 iptables -L
+
+cd
+# install ntp
+/etc/init.d/ntpd start
+
+# rc(dot)files
+sh ~/dotfiles/freebsd/rc.install.bash $1
