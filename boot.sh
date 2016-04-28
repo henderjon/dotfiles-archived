@@ -8,28 +8,14 @@
 
 cd
 # set up working dir
-mkdir -p ~/code/go/src/github/henderjon
-mkdir -p ~/code/go/bin
-mkdir -p ~/code/go/pkg
+mkdir -p ~/code/go/bin ~/code/go/pkg ~/code/go/src/github/henderjon
 
 # rc(dot)files
-f=.gitconfig # gitconfig
-mv ~/$f ~/$f.bkup && ln -s ~/dotfiles/$f ~/$f
-
-f=.screenrc  # screenrc
-mv ~/$f ~/$f.bkup && ln -s ~/dotfiles/$f ~/$f
-
-f=.tmux.conf # tmux.conf
-mv ~/$f ~/$f.bkup && ln -s ~/dotfiles/$f ~/$f
-
-f=.vim       # vim
-mv ~/$f ~/$f.bkup && ln -s ~/dotfiles/$f ~/$f
-
-f=.vimrc     # vimrc
-mv ~/$f ~/$f.bkup && ln -s ~/dotfiles/$f ~/$f
-
-f=.zshrc     # zshrc
-mv ~/$f ~/$f.bkup && ln -s ~/dotfiles/$f ~/$f
+FILES=(.gitconfig .screenrc .tmux .vim .vimrc .zshrc)
+for f in FILES; do
+	mv ~/$f ~/$f.bkup
+	ln -s ~/dotfiles/$f ~/$f
+done
 
 printf ",s/Laptop/$1/\nw\nq\n" | ed .zshrc
 touch ~/.evn_zshrc

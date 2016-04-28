@@ -6,10 +6,6 @@ cd
 # all the cool kids use pkg now
 pkg update
 
-# cd
-# ... but we still want ports around
-# portsnap fetch extract
-
 cd
 # install the userful tools
 pkg install vim git zsh tmux ipfw
@@ -38,3 +34,7 @@ cd
 # install golang
 fetch $GOLANGV
 tar -C /usr/local -xvf $GOLANGV
+
+# cd
+# ... but we still want ports around
+# portsnap fetch extract

@@ -5,11 +5,6 @@ GOLANGV=https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
 yum install vim git ed zsh tmux iptables sudo ntp ntpdate ntp-doc
 
 cd
-# install golang
-wget $GOLANGV
-tar -C /usr/local -xvf $GOLANGV
-
-cd
 # install the firewall
 iptables-restore <<IPTABLEBLOCK
 	*filter
@@ -66,3 +61,8 @@ iptables -L
 cd
 # install ntp
 /etc/init.d/ntpd start
+
+cd
+# install golang
+wget $GOLANGV
+tar -C /usr/local -xvf $GOLANGV
