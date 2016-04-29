@@ -6,7 +6,8 @@ yum install vim git ed zsh tmux iptables sudo ntp ntpdate ntp-doc
 
 cd
 # install the firewall
-iptables-restore <<IPTABLEBLOCK
+#!/usr/bin/env bash
+iptables-restore <<-IPTABLEBLOCK
 	*filter
 	:INPUT DROP [0:0]
 	:FORWARD DROP [0:0]
