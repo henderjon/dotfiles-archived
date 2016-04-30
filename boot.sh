@@ -19,7 +19,7 @@ do
 done
 
 printf ",s/Laptop/$1/\nw\nq\n" | ed .zshrc
-touch ~/.evn_zshrc
+touch ~/.env_zshrc
 
 cd
 # generate an ssh key
