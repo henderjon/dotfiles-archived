@@ -66,5 +66,5 @@ cd
 
 cd
 # install golang
-wget GOLANGU
-tar -C /usr/local -xvf GOLANGF
+wget $GOLANGU
+tar -C /usr/local -xvf $GOLANGF

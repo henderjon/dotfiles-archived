@@ -32,3 +32,5 @@ ssh-keygen -t rsa -C "$2"
 
 # http://www.shellcheck.net/
 
+source ~/.zshrc
+
