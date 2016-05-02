@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-GOLANGU=https://storage.googleapis.com/golang/
+GOLANGU=https://storage.googleapis.com/golang
 GOLANGF=go1.6.2.linux-amd64.tar.gz
 
 cd
@@ -33,8 +33,8 @@ sysctl net.inet.ip.fw.verbose_limit=5
 
 cd
 # install golang
-fetch $GOLANGU/$GOLANGF
-tar -C /usr/local -xvf $GOLANGF
+fetch "$GOLANGU/$GOLANGF"
+tar -C /usr/local -xvf "$GOLANGF"
 
 # cd
 # ... but we still want ports around
