@@ -6,12 +6,22 @@
 # install dotfiles
 # git clone $DOTFILES
 
+if [ -z "$1" ]; then
+	printf "please provide a name\n"
+	exit 1
+fi
+
+if [ -z "$2" ]; then
+	printf "please provide an email\n"
+	exit 1
+fi
+
 cd
 # set up working dir
 mkdir -p ~/code/go/bin ~/code/go/pkg ~/code/go/src/github/henderjon
 
 # rc(dot)files
-FILES=".gitconfig .screenrc .tmux .vim .vimrc .zshrc"
+FILES=".gitconfig .screenrc .tmux.conf .vim .vimrc .zshrc"
 for f in $FILES
 do
 	if [ ! -h "$f" ]; then mv ~/"$f" ~/"$f.bkup"; else rm "$f"; fi
