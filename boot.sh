@@ -28,7 +28,7 @@ do
 	ln -s ~/dotfiles/"$f" ~/"$f"
 done
 
-printf ",s/Laptop/$1/\nw\nq\n" | ed .zshrc
+sed -i 's/Laptop/$1/' .zshrc
 touch ~/.env_zshrc
 
 cd
