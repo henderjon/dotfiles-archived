@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-GOLANGV=https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
+GOLANGU=https://storage.googleapis.com/golang/
+GOLANGF=go1.6.2.linux-amd64.tar.gz
 
 yum install vim git ed zsh tmux iptables sudo ntp ntpdate ntp-doc
 
@@ -65,5 +66,5 @@ cd
 
 cd
 # install golang
-wget $GOLANGV
-tar -C /usr/local -xvf $GOLANGV
+wget GOLANGU
+tar -C /usr/local -xvf GOLANGF

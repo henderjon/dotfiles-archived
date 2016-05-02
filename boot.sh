@@ -13,7 +13,7 @@ fi
 
 cd || exit
 # set up working dir
-mkdir -p ~/code/go/bin ~/code/go/pkg ~/code/go/src/github/henderjon
+mkdir -p ~/code/go/bin ~/code/go/pkg ~/code/go/src/github.com/henderjon
 
 # rc(dot)files
 FILES=".gitconfig .screenrc .tmux.conf .vim .vimrc .zshrc"
