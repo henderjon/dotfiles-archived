@@ -65,6 +65,11 @@ cd
 /etc/init.d/ntpd start
 
 cd
+# disable password auth
+sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+service sshd reload # systemctl reload sshd.service
+
+cd
 # install golang
 wget "$GOLANGU/$GOLANGF"
 tar -C /usr/local -xvf "$GOLANGF"
