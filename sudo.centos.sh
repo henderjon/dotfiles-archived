@@ -3,7 +3,7 @@
 GOLANGU=https://storage.googleapis.com/golang
 GOLANGF=go1.6.2.linux-amd64.tar.gz
 
-yum install vim git ed zsh tmux iptables sudo ntp ntpdate ntp-doc
+yum install vim git zsh tmux ed iptables sudo ntp ntpdate ntp-doc
 
 cd
 # install the firewall
@@ -66,8 +66,8 @@ cd
 
 cd
 # disable password auth
-sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
-sed -i 's/ChallengeResponseAuthentication yes/ChallengeResponseAuthentication no/g' /etc/ssh/sshd_config
+sed -i="" 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sed -i="" 's/ChallengeResponseAuthentication yes/ChallengeResponseAuthentication no/g' /etc/ssh/sshd_config
 service sshd reload # systemctl reload sshd.service
 
 cd

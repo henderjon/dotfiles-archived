@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 GOLANGU=https://storage.googleapis.com/golang
-GOLANGF=go1.6.2.linux-amd64.tar.gz
+GOLANGF=go1.6.2.freebsd-amd64.tar.gz
 
 cd
 # all the cool kids use pkg now
@@ -9,7 +9,7 @@ pkg update
 
 cd
 # install the userful tools
-pkg install vim git zsh tmux ipfw
+pkg install vim git zsh tmux # ipfw
 
 cd
 # firewall
@@ -30,6 +30,12 @@ service ipfw start
 service ntpd start
 printf "net.inet.ip.fw.verbose_limit=5" >> /etc/sysctl.conf
 sysctl net.inet.ip.fw.verbose_limit=5
+
+cd
+# disable password auth
+sed -i="" 's/PasswordAuthentication yes/PasswordAuthentication no/g' /etc/ssh/sshd_config
+sed -i="" 's/ChallengeResponseAuthentication yes/ChallengeResponseAuthentication no/g' /etc/ssh/sshd_config
+service sshd reload # systemctl reload sshd.service
 
 cd
 # install golang
