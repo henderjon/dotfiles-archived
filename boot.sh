@@ -19,7 +19,7 @@ mkdir -p ~/code/go/bin ~/code/go/pkg ~/code/go/src/github.com/henderjon
 FILES=".gitconfig .screenrc .tmux.conf .vim .vimrc .zshrc"
 for f in $FILES
 do
-	if [ -e "$f" ] && [ ! -h "$f" ]; then mv ~/"$f" ~/"$f.bkup"; else rm "$f"; fi
+	if [ -f "$f" ]; then mv ~/"$f" ~/"$f.bkup"; else rm "$f"; fi
 	ln -s ~/dotfiles/"$f" ~/"$f"
 done
 
