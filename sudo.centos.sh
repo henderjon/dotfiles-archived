@@ -34,29 +34,6 @@ iptables-restore <<-IPTABLEBLOCK
 	-A OUTPUT -m state --state NEW,RELATED,ESTABLISHED -j ACCEPT
 
 	COMMIT
-
-	# drop ICMP pings
-	# iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
-	# iptables -A INPUT -i eth1 -p icmp --icmp-type echo-request -j DROP
-
-	# eg
-	# iptables -A :chain -p :protocol -m :match --dport :port -j :action
-
-	### RUN
-	################################################################################
-
-	# iptables-restore < this.file
-	# iptables -L
-
-	### COMMON PORTS ###
-	# http: 80, 443
-	# ssh: 22
-	# ftp: 21
-	# mysql: 3306
-	# redis: 6379
-	# IRC: 6667
-	# gearman: 4730
-	# memcache: 11211
 IPTABLEBLOCK
 iptables -L
 
@@ -79,3 +56,27 @@ tar -C /usr/local -xvf "$GOLANGF"
 # PermitRootLogin no
 # AllowUsers alice bob
 
+### IPTABLES NOTES #############################################################
+#
+# drop ICMP pings
+# iptables -A INPUT -p icmp --icmp-type echo-request -j DROP
+# iptables -A INPUT -i eth1 -p icmp --icmp-type echo-request -j DROP
+#
+# eg
+# iptables -A :chain -p :protocol -m :match --dport :port -j :action
+#
+### RUN
+################################################################################
+#
+# iptables-restore < this.file
+# iptables -L
+#
+### COMMON PORTS ###
+# http: 80, 443
+# ssh: 22
+# ftp: 21
+# mysql: 3306
+# redis: 6379
+# IRC: 6667
+# gearman: 4730
+# memcache: 11211
