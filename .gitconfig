@@ -23,6 +23,7 @@
 	defaultToUpstream = true
 [mergetool]
 	keepBackup = true
+	bc3 = trustExitCode
 [mergetool "vimerge"]
 	cmd = vim -f -d $LOCAL $MERGED $REMOTE
 	trustExitCode = false
@@ -31,7 +32,8 @@
 	columns = %<(32)%cd %>(16)%an | %><(7)%h | %s
 	quick   = %h | %<(15)%an %<(15)%cd %s
 [diff]
-	tool = diff
+	tool = bc3
+#	tool = diff
 [difftool]
 	prompt = false
 [difftool "diff"]
@@ -52,3 +54,11 @@
 #-- diff/merge args: $BASE $LOCAL $REMOTE $MERGED
 #-- extrenal diff-wrapper params: $PATH $OLD-FILE $OLD-HEX $OLD-MODE $NEW-FILE $NEW-HEX $NEW-MODE
 #----------------------------------------------------------------------#
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+branch-name = "!git rev-parse --abbrev-ref HEAD"
+publish     = "!git push -u origin $(git branch-name)"
+unpublish   = "!git push origin :$(git branch-name)"
