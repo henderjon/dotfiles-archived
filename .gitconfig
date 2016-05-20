@@ -40,11 +40,14 @@
 #	cmd = diff -U 0 $LOCAL $REMOTE
 	trustExitCode = false
 [alias]
-	cl  = log --pretty=columns -20
-	rcl = reflog --pretty=columns -20
-	vv  = branch -vv
-	co  = checkout
-	s   = status
+	cl          = log --pretty=columns -20
+	rcl         = reflog --pretty=columns -20
+	vv          = branch -vv
+	co          = checkout
+	s           = status
+	branch-name = "!git rev-parse --abbrev-ref HEAD"
+	publish     = "!git push -u origin $(git branch-name)"
+	unpublish   = "!git push origin :$(git branch-name)"
 [fetch]
 	prune = true
 [log]
@@ -59,6 +62,4 @@
 	smudge = git-lfs smudge %f
 	required = true
 
-branch-name = "!git rev-parse --abbrev-ref HEAD"
-publish     = "!git push -u origin $(git branch-name)"
-unpublish   = "!git push origin :$(git branch-name)"
+
