@@ -30,6 +30,7 @@
 	keepBackup = false
 [pretty]
 	columns = %<(32)%cd %>(16)%an | %><(7)%h | %s
+	difflog = %<(25)%ci | %><(7)%h | %s
 	quick   = %h | %<(15)%an %<(15)%cd %s
 [diff]
 	tool = bc3
@@ -41,11 +42,13 @@
 	trustExitCode = false
 [alias]
 	cl          = log --pretty=columns -20
+	dl          = log --pretty=difflog -200000
 	rcl         = reflog --pretty=columns -20
 	vv          = branch -vv
 	co          = checkout
 	cb          = checkout -b
-	s           = status
+	s           = status --short --branch
+	ss          = status
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish     = "!git push -u origin $(git branch-name)"
 	unpublish   = "!git push origin :$(git branch-name)"
@@ -63,5 +66,8 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+
+
+
 
 
