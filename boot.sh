@@ -34,3 +34,6 @@ ssh-keygen -t rsa -C "$2"
 
 source ~/.zshrc
 
+
+
+

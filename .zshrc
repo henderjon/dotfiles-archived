@@ -72,7 +72,7 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 
 #------------------------------------------------- Alias [`man zshbuiltins`] --#
 # alias lsl='ls -AFGThl'  # --time-style=+'%b %e %T %Y' ## MacOS, BSD
-alias lsl='ls -AFChl' # --time-style=+'%b %e %T %Y' ## Linux
+alias lsl='ls -AFChl --color' # --time-style=+'%b %e %T %Y' ## Linux
 alias less='less -S '
 alias ed='ed -p :'
 alias h='history -25'
