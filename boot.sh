@@ -23,7 +23,7 @@ do
 	ln -s ~/dotfiles/"$f" ~/"$f"
 done
 
-sed -i "" "s/Laptop/$1/" ~/dotfiles/.zshrc
+sed --in-place "s/Laptop/$1/" ~/dotfiles/.zshrc
 touch ~/.env_zshrc
 
 cd || exit
