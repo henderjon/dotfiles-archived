@@ -29,6 +29,7 @@
 
 %: yum install gcc make kernel-devel bzip2
 %: yum update kernel
+%: yum -y install epel-release
 
 ## user management
 %: usermod -a -G vboxsf,wheel,root -g $username $username
