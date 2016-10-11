@@ -77,6 +77,7 @@ alias less='less -S '
 alias ed='ed -p :'
 alias h='history -25'
 alias hall='history 1'
+alias psp='ps -eo user,group,pid,comm,args'
 alias grep='grep --color '
 alias gome='cd $GOPATH/src/github.com/henderjon'
 
