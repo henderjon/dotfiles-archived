@@ -4,6 +4,7 @@
 	set nowrap                                               " turn off word wrap
 	set number                                               " line numbers
 	set ruler                                                " show ruler
+	set paste                                                " allow better copy-n-pasting
 	set laststatus=2                                         " always show command area
 	set cmdheight=2                                          " make command area two lines high
 	set statusline=\ %n\ \ %<%F\ \ %M%R%=\ %c\ \ %l/%L\ \ %r " comment?
@@ -40,7 +41,8 @@
 	endif
 
 	syntax on
-	colorscheme monokaish
+	highlight ColorColumn ctermbg=DarkGray ctermfg=white
+	" colorscheme monokaish
 	" set background=dark
 
 
