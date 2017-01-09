@@ -15,6 +15,7 @@
 [push]
 	default = upstream
 [pull]
+	rebase = true
 	default = upstream
 	ff = true
 [merge]

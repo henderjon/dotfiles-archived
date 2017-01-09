@@ -24,6 +24,12 @@ setopt inc_append_history
 #------------------------------ do not append command if it matches the last --#
 setopt hist_ignore_dups
 
+#------------------------------------- ignore commands that start with space --#
+setopt hist_ignore_space
+
+#----------------------------------------------------------- across sessions --#
+setopt SHARE_HISTORY
+
 #------------------------------------------------ save timestamps in history --#
 setopt extended_history
 
@@ -62,6 +68,7 @@ export GO15VENDOREXPERIMENT=1
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$HOMELOCAL/bin:$HOMELOCAL/sbin:$PATH
+export PATH=$HOME/bin:$PATH
 export GOPATH=$HOME/code/go               # points to workspace
 export GOROOT=/usr/local/go               # ONLY use for custom install location
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
