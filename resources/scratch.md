@@ -29,6 +29,11 @@ To remove a remote branch:
 To figure out what's going down on a remote
 
   - `$ git remote show REMOTE`
+  
+To clean commits out of a repo
+
+  - `git reflog expire --expire=now --all`
+  - `git gc --prune=now`
 
 ### diff -e
 
