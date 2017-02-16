@@ -8,6 +8,8 @@
 	logallrefupdates = true
 	ignorecase = true
 	editor = vi
+[gc]
+	auto = 0
 [color]
 	ui = true
 [help]
