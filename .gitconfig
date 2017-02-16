@@ -48,12 +48,14 @@
 	vv          = branch -vv
 	co          = checkout
 	cb          = checkout -b
+	cr          = "!f(){ git fetch origin; git checkout -B review/$1 origin/$1; }; f"
 	s           = status --short --branch
 	ss          = status
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish     = "!git push -u origin $(git branch-name)"
 	unpublish   = "!git push origin :$(git branch-name)"
 	exclude     = "!f(){ echo $1 >> $(git rev-parse --git-dir)/info/exclude; }; f"
+
 [fetch]
 	prune = true
 [log]
