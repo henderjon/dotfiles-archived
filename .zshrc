@@ -78,8 +78,8 @@ export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
 
 #------------------------------------------------- Alias [`man zshbuiltins`] --#
-# alias lsl='ls -AFGTl '  # --time-style=+'%b %e %T %Y' ## MacOS, BSD
-alias lsl='ls -AFCl --color ' # --time-style=+'%b %e %T %Y' ## Linux
+alias lsl='ls -AFGTl '  # --time-style=+'%b %e %T %Y' ## MacOS, BSD
+# alias lsl='ls -AFCl --color ' # --time-style=+'%b %e %T %Y' ## Linux
 alias lslh='lsl -h '
 alias less='less -S '
 alias ed='ed -p :'

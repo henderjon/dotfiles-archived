@@ -53,6 +53,7 @@
 	cr          = "!f(){ git fetch origin; git checkout -B review/$1 origin/$1; }; f"
 	s           = status --short --branch
 	ss          = status
+	wip         = commit -m wip
 	branch-name = "!git rev-parse --abbrev-ref HEAD"
 	publish     = "!git push -u origin $(git branch-name)"
 	unpublish   = "!git push origin :$(git branch-name)"
@@ -76,3 +77,5 @@
 
 
 
+[gc]
+	auto = 0

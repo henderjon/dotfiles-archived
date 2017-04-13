@@ -1,0 +1,22 @@
+{
+    "name": "theme-monokai-NI",
+    "displayName": "monokai-NI",
+    "description": "a dark throwback theme",
+    "version": "0.0.1",
+    "publisher": "henderjon",
+    "engines": {
+        "vscode": "^1.11.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Monokai-NI",
+                "uiTheme": "vs-dark",
+                "path": "./themes/monokai-NI.tmTheme"
+            }
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+// Place your settings in this file to overwrite the default settings
+{
+      "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+      "editor.fontSize": 11,
+      "editor.insertSpaces": false,
+      "editor.tabCompletion": false,
+      "editor.rulers": [72, 80],
+      "editor.minimap.enabled": true,
+      "editor.renderIndentGuides": true,
+      "editor.renderLineHighlight": "all",
+      "editor.selectionHighlight": false,
+      "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+
+      "files.insertFinalNewline": true,
+      "files.trimTrailingWhitespace": true,
+
+      "workbench.colorTheme": "Monokai-NI",
+      "workbench.activityBar.visible": true,
+
+      "window.zoomLevel": 0,
+      "workbench.iconTheme": "vs-minimal"
+}
