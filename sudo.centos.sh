@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 GOLANGU=https://storage.googleapis.com/golang
-GOLANGF=go1.6.2.linux-amd64.tar.gz
+GOLANGF=go1.8.1.linux-amd64.tar.gz
 
-yum install vim git zsh tmux ed iptables sudo ntp ntpdate ntp-doc
+yum install vim git zsh tmux ed iptables sudo ntp ntpdate ntp-doc jq pigz
 
 cd
 # install the firewall
