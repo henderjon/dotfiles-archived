@@ -71,6 +71,7 @@ export PATH=$HOMELOCAL/bin:$HOMELOCAL/sbin:$PATH
 export PATH=$HOME/bin:$PATH
 export GOPATH=$HOME/code/go               # points to workspace
 export GOROOT=/usr/local/go               # ONLY use for custom install location
+export GOBIN=$GOROOT/bin                  # for go install
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
 
 #---------------------------------------------------------------------- subl --#
