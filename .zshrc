@@ -73,6 +73,7 @@ export GOPATH=$HOME/code/go               # points to workspace
 export GOROOT=/usr/local/go               # ONLY use for custom install location
 export GOBIN=$GOROOT/bin                  # for go install
 export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
+export GOROOT_BOOTSTRAP=$GOROOT           # to build new versions of Go
 
 #---------------------------------------------------------------------- subl --#
 # alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl '
