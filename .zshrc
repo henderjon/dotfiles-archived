@@ -69,11 +69,15 @@ export GO15VENDOREXPERIMENT=1
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$HOMELOCAL/bin:$HOMELOCAL/sbin:$PATH
 export PATH=$HOME/bin:$PATH
-export GOPATH=$HOME/code/go               # points to workspace
-export GOROOT=/usr/local/go               # ONLY use for custom install location
-export GOBIN=$GOROOT/bin                  # for go install
-export PATH=$GOROOT/bin:$GOPATH/bin:$PATH # must add go bins to path
-export GOROOT_BOOTSTRAP=$GOROOT           # to build new versions of Go
+
+#-------------------------------------------------------------------- GO ENV --#
+export GOVERSION="1.9"                        # NOT A GO VAR; used for updating versions
+export GOPATH="$HOME/code/go$GOVERSION"       # points to local workspace
+export GOROOT="/usr/local/go$GOVERSION"       # this is the default location; ONLY used for custom install location
+export GOROOT_FINAL="/usr/local/go$GOVERSION" # destination after building from source
+export GOBIN=$GOROOT/bin                      # destination for bins after `go install`
+export PATH=$GOROOT/bin:$GOPATH/bin:$PATH     # adding $GOBIN to the path to use installed bins
+export GOROOT_BOOTSTRAP=$GOROOT               # to build new versions of Go, point to the old version of Go
 
 #---------------------------------------------------------------------- subl --#
 # alias subl='/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl '
