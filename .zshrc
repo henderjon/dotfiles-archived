@@ -52,9 +52,9 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' menu select
 
 #------------------------------------------------------- these are important --#
-export EDITOR=ed
-export VISUAL=vi
-export PAGER=less
+#export EDITOR=ed
+#export VISUAL=vi
+#export PAGER=less
 
 #---------------------------------------------------------------- HOME LOCAL --#
 export HOMELOCAL=$HOME/local
