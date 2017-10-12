@@ -1,11 +1,5 @@
 ################ http://zsh.sourceforge.net/Guide/zshguide.html ################
 
-#-------------------------------------------------------------- fancy prompt --#
-PROMPT='[Laptop] %# %~/: '
-
-#-------------------------- fancy RIGHT prompt -- '%?[%D{%d %b %Y %l:%M%p}]' --#
-RPROMPT='%?[%D{%Y-%m-%d %H:%M:%S}]'
-
 #-------------------------------------------------------------- history file --#
 HISTFILE=$HOME/.history
 
@@ -72,7 +66,7 @@ export PATH=$HOME/bin:$PATH
 
 #-------------------------------------------------------------------- GO ENV --#
 export GOVERSION="1.9"                        # NOT A GO VAR; used for updating versions
-export GOPATH="$HOME/code/go$GOVERSION"       # points to local workspace
+export GOPATH="$HOME/code/go"                 # points to local workspace
 export GOROOT="/usr/local/go$GOVERSION"       # this is the default location; ONLY used for custom install location
 export GOROOT_FINAL="/usr/local/go$GOVERSION" # destination after building from source
 export GOBIN=$GOROOT/bin                      # destination for bins after `go install`
@@ -101,6 +95,26 @@ export IRCNICK=henderjon
 export IRCUSER=henderjon
 
 #-------------------------------- Optional settings not commited to the repo --#
-if [ -f $HOME/.env_zshrc ]; then
-	source $HOME/.env_zshrc
+if [ -f "$HOME/.env_zshrc" ]; then
+	source "$HOME/.env_zshrc"
 fi
+
+#-------------------------------------------- name the ENV based on env file --#
+if [ -z "$ENV_NAME" ]; then
+	ENV_NAME="Laptop"
+fi
+
+#------------------------------------------------------ label screened terms --#
+if [[ "$TERM" = "screen"* ]] && [ -z "$TMUX" ]; then
+	XTERM=" (screen)"
+elif [[ "$TERM" = "screen"* ]] && [ -n "$TMUX" ]; then
+	XTERM=" (tmux)"
+else
+	XTERM=""
+fi
+
+#-------------------------------------------------------------- fancy prompt --#
+PROMPT="[$ENV_NAME]$XTERM %# %~/: "
+
+#-------------------------- fancy RIGHT prompt -- '%?[%D{%d %b %Y %l:%M%p}]' --#
+RPROMPT='%?[%D{%Y-%m-%d %H:%M:%S}]'
