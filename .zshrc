@@ -52,6 +52,7 @@ zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' menu select
 
 #------------------------------------------------------- these are important --#
+#--------------------------- these are off as they mess with tmux and screen --#
 #export EDITOR=ed
 #export VISUAL=vi
 #export PAGER=less
