@@ -1,13 +1,13 @@
 [user]
 	email = list@box370.net
 	name = henderjon
+	signingkey = 5537708AAED1476D
 [core]
 	quotepath = false
 	autocrlf = input
 	fileMode = false
 	logallrefupdates = true
 	ignorecase = true
-	editor = vi
 [gc]
 	auto = 0
 [color]
@@ -32,7 +32,7 @@
 	trustExitCode = false
 	keepBackup = false
 [pretty]
-	columns = %<(32)%cd %>(16)%an | %><(7)%h | %s
+	columns = %<(32)%cd %>(16)%an (%G?) | %><(7)%h | %Cred%d%Creset %s
 	difflog = %<(25)%ci | %><(7)%h | %s
 	quick   = %h | %<(15)%an %<(15)%cd %s
 [diff]
@@ -47,7 +47,7 @@
 	cl          = log --pretty=columns -20
 	dl          = log --pretty=difflog -200000
 	rcl         = reflog --pretty=columns -20
-	vv          = branch -vv
+	vv          = branch -vv --sort=-committerdate
 	co          = checkout
 	cb          = checkout -b
 	cr          = "!f(){ git fetch origin; git checkout -B review/$1 origin/$1; }; f"
@@ -79,3 +79,5 @@
 
 [gc]
 	auto = 0
+[commit]
+	gpgsign = true
