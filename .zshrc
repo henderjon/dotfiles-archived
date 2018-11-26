@@ -2,12 +2,13 @@
 
 #-------------------------------------------------------------- history file --#
 HISTFILE=$HOME/.history
+HISTFILESIZE=151000
 
 #----------------------------------------------------- history file max size --#
-HISTSIZE=15000
+HISTSIZE=151000
 
 #----------------------------------- max number of lines to write to history --#
-SAVEHIST=15000
+SAVEHIST=150000
 
 #-------------------------------------- disallow Ctrl-d from exiting windows --#
 setopt ignore_eof
@@ -59,7 +60,7 @@ zstyle ':completion:*' menu select
 
 #---------------------------------------------------------------- HOME LOCAL --#
 export HOMELOCAL=$HOME/local
-export GO15VENDOREXPERIMENT=1
+export GO111MODULE=on
 
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$HOMELOCAL/bin:$HOMELOCAL/sbin:$PATH

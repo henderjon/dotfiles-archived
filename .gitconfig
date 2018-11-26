@@ -33,7 +33,7 @@
 	keepBackup = false
 [pretty]
 	columns = %<(32)%cd %>(16)%an (%G?) | %><(7)%h | %Cred%d%Creset %s
-	difflog = %<(25)%ci | %><(7)%h | %s
+	difflog = %<(25)%ci %>(16)%an | %><(7)%h | %s
 	quick   = %h | %<(15)%an %<(15)%cd %s
 [diff]
 	tool = bc3
@@ -81,3 +81,7 @@
 	auto = 0
 [commit]
 	gpgsign = true
+[gpg]
+	program = /usr/local/MacGPG2/bin/gpg2
+[url "git@github.com:"]
+	insteadOf = https://github.com/
